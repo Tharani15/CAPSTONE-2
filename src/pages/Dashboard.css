@@ -1,0 +1,131 @@
+/* Dashboard Page Styles */
+.dashboard-page {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.dashboard-welcome {
+  margin-bottom: 24px;
+}
+
+.welcome-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  letter-spacing: -0.2px;
+}
+
+.welcome-subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* 3 Summary Cards Grid */
+.summary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+/* Recent Tasks Section */
+.recent-tasks-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-tasks-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.recent-tasks-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.view-all-link {
+  color: #1ea882;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.recent-tasks-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.recent-tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.recent-task-item:last-child {
+  border-bottom: none;
+}
+
+.task-title-text {
+  color: var(--text-primary);
+}
+
+.empty-tasks-message {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.empty-tasks-message a {
+  color: #1ea882;
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .summary-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

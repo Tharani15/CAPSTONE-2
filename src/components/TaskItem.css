@@ -1,0 +1,67 @@
+/* Task Item / Row Styles */
+.task-row {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.task-row:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.task-cell {
+  padding: 14px 16px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.title-cell {
+  color: var(--text-primary);
+  font-weight: 400;
+  width: 32%;
+}
+
+.desc-cell {
+  color: var(--text-secondary);
+  width: 34%;
+}
+
+.status-cell {
+  width: 18%;
+}
+
+.status-completed {
+  color: var(--status-completed);
+  font-weight: 500;
+}
+
+.status-pending {
+  color: var(--status-pending);
+}
+
+.actions-cell {
+  width: 16%;
+  white-space: nowrap;
+}
+
+.action-link {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 0;
+  margin-right: 14px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.edit-link {
+  color: #1ea882;
+}
+
+.delete-link {
+  color: var(--danger-color);
+}
+

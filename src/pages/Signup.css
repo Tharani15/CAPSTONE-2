@@ -1,0 +1,8 @@
+/* Signup Page Styles */
+/* Inherits base auth styling from Login.css */
+@import './Login.css';
+
+.auth-form .form-group {
+  margin-bottom: 2px;
+}
+
